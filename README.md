@@ -23,7 +23,7 @@ Simple gRPC application with cross-language communication (incl. golang server, 
 * install every item of [prerequirements](#prerequirements).
 * install golang dependencies: `go mod download`
 * install nodejs dependencies: `npm i`
-* generate gRPC-compiled codes: `npx buf gen`
+* generate gRPC-compiled codes: `npx buf generate ./proto`
 * start server: `npm run server`
 * Run client: `npm run client`
 * *profit*
