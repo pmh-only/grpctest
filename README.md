@@ -9,7 +9,7 @@ Simple gRPC application with cross-language communication (incl. golang server, 
 * [Server Code](./server/main.go) (Golang)
 * [Client Code](./client/main.ts) (TypeScript)
 
-## Prereqirements
+## Prerequirements
 * golang compiler
 * node.js runtime
 * npm package manager
@@ -18,7 +18,7 @@ Simple gRPC application with cross-language communication (incl. golang server, 
 * [protobuf go/go-grpc compiler](https://grpc.io/docs/languages/go/quickstart/#prerequisites)
 
 ## How to run
-* install every item of [prereqirements](#prereqirements).
+* install every item of [prerequirements](#prerequirements).
 * install golang dependencies: `go mod download`
 * install nodejs dependencies: `npm i`
 * generate gRPC-compiled codes: `npx buf gen`
