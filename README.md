@@ -18,6 +18,9 @@ Simple gRPC application with cross-language communication (incl. golang server, 
 * [protobuf compiler](https://github.com/protocolbuffers/protobuf/releases)
 * [protobuf js/js-grpc compiler](https://github.com/protocolbuffers/protobuf-javascript/releases)
 * [protobuf go/go-grpc compiler](https://grpc.io/docs/languages/go/quickstart/#prerequisites)
+* [And the node-gyp must work perfectly](https://github.com/nodejs/node-gyp#installation)
+  > For Windows users: Just turn on this checkbox at node.js installation!
+  > ![[Node.js installation screenshot](./docs/windows-gyp.png)](./docs/windows-gyp.png)
 
 ## How to run
 * install every item of [prerequirements](#prerequirements).
