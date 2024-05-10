@@ -1,6 +1,8 @@
 # grpctest
 Simple gRPC application with cross-language communication (incl. golang server, typescript client and proto files) for educational purpose
 
+![[structure diagram](./docs/diagram.png)](./docs/diagram.png)
+
 ## Screenshots
 ![[here!](./docs/image.png)](./docs/image.png)
 
