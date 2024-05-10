@@ -1,0 +1,18 @@
+version: v1
+plugins:
+  - name: js
+    out: ./proto
+    opt: import_style=commonjs,binary
+  - name: grpc
+    out: ./proto
+    opt: grpc_js
+    path: grpc_tools_node_protoc_plugin
+  - name: ts
+    out: ./proto
+    opt: grpc_js
+  - plugin: go
+    out: ./proto
+    opt: paths=source_relative
+  - plugin: go-grpc
+    out: ./proto
+    opt: paths=source_relative

@@ -1,0 +1,23 @@
+{
+  "name": "grpctest",
+  "version": "1.0.0",
+  "description": "Simple gRPC application (incl. server, client and proto files) for educational purpose",
+  "main": "index.js",
+  "scripts": {
+    "server": "go run ./server",
+    "client": "ts-node ./client/main.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@bufbuild/buf": "^1.31.0",
+    "grpc_tools_node_protoc_ts": "^5.3.3",
+    "grpc-tools": "^1.12.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.7",
+    "google-protobuf": "^3.21.2"
+  }
+}

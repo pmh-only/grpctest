@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+option go_package = "grpctest/proto";
+
+package grpctest;
+
+service UserManager {
+  rpc CreateUser (CreateUserRequest) returns (CreateUserReply);
+  rpc SearchUser (SearchUserRequest) returns (SearchUserReply);
+}
+
+enum UserType {
+  UT_DEVELOPER = 0;
+  UT_QA        = 1;
+  UT_DEVOPS    = 2;
+  UT_CTO       = 3;
+}
+
+message User {
+  int64    id   = 1;
+  string   name = 2;
+  int32    age  = 3;
+  UserType type = 4;
+}
+
+message CreateUserRequest {
+  string   name = 1;
+  int32    age  = 2;
+  UserType type = 3;
+}
+
+message CreateUserReply {
+  int64 id = 1;
+}
+
+message SearchUserRequest {
+
+}
+
+message SearchUserReply {
+  repeated User users = 1;
+}
